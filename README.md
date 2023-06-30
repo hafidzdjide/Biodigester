@@ -1,2 +1,13 @@
 # Biodigester
-Penulisan Ilmiah
+
+## Dokumentasi Pin
+
+### Relay
+
+| Pin Relay | Nomor Relay | Output | Pin Uno| 
+| :-------- | :------- |  :------- | :-------|
+| ` ` | ` ` |` `|` `|
+| ` ` | ` ` |` `|` `|
+| ` ` | ` ` |` `|` `|
+| ` ` | ` ` |` `|` `|
+
