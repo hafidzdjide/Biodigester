@@ -11,6 +11,8 @@
 |`IN3`|`Valve`|`33`|
 |`IN4`|`Strobe`|`31`|
 
+### Sensor
+
 | Sensor | Pin UNO |
 |:------- |:-------|
 |`Methana`|`A8`|
