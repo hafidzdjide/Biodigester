@@ -23,6 +23,7 @@
 
 #### Digital
 | Sensor | Pin UNO |
+|:------- |:-------|
 |`Flow`|`D22`|
 |`Temp(SCK)`|`D24`|
 |`Temp(CS)`|`D26`|
@@ -31,5 +32,6 @@
 
 ### RTC dan LCD
 | Pin | Pin UNO |
+|:------- |:-------|
 |`SDA`|`D20`|
 |`SCL`|`D21`|
