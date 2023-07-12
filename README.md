@@ -12,16 +12,24 @@
 |`IN4`|`Strobe`|`31`|
 
 ### Sensor
-
+#### Analog
 | Sensor | Pin UNO |
 |:------- |:-------|
 |`Methana`|`A8`|
-|`PH`|`A9`|
-|`Pressure1`|`A10`|
-|`Pressure2`|`A11`|
+|`Pressure1`|`A9`|
+|`Pressure2`|`A10`|
+|`pH`|`A11`|
 |`CO2`|`A12`|
+
+#### Digital
+| Sensor | Pin UNO |
 |`Flow`|`D22`|
-|`Temp()`|`D24`|
-|`Temp()`|`D26`|
-|`Temp()`|`D28`|
+|`Temp(SCK)`|`D24`|
+|`Temp(CS)`|`D26`|
+|`Temp(SO)`|`D28`|
 |`Water Level`|`D30`|
+
+### RTC dan LCD
+| Pin | Pin UNO |
+|`SDA`|`D20`|
+|`SCL`|`D21`|
