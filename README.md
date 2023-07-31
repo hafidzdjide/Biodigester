@@ -11,6 +11,8 @@
 |`IN3`|`Valve`|`33`|
 |`IN4`|`Strobe`|`31`|
 
+Strobe Aktif ketika nilai Low
+
 ### Sensor
 #### Analog
 | Sensor | Pin UNO |
