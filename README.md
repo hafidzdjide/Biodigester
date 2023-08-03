@@ -16,6 +16,12 @@ SoftwareSerial (2, 3) // (RX,TX)
 |`RX`|`D3`|
 |`TX`|`D2`|
 
+####
+| Pin ESP | Pin Mega |
+|:--------|:-------|
+|`D1`|`D3`|
+|`D2`|`D2`|
+
 ### Relay
 
 | Pin Relay | Output | Pin Mega| 
