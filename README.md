@@ -47,6 +47,7 @@ SoftwareSerial (2, 3) // (RX,TX)
 ### Relay
 Active Low
 - Strobe
+
 Active High
 
 | Pin Relay | Output | Pin Mega| 
