@@ -39,6 +39,12 @@ SoftwareSerial (2, 3) // (RX,TX)
 |`RX`|`D3`|
 |`TX`|`D2`|
 
+SoftwareSerial (18,19) // (RX,TX)
+| Pin ESP | Pin Mega |
+|:--------|:-------|
+|`RX`|`TX1(18)`|
+|`TX`|`RX1(19)`|
+
 ####
 | Pin ESP | Pin Mega |
 |:--------|:-------|
