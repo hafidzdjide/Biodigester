@@ -7,7 +7,7 @@ Program
 IoT
   - [ ] Waktu
   - [ ] ThingSpeak
-  - 
+  - [ ] Telegram
 
 ## Notifikasi Telegram
 - Warning 1,
