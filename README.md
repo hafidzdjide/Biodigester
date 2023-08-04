@@ -39,7 +39,7 @@ SoftwareSerial (2, 3) // (RX,TX)
 |`RX`|`D3`|
 |`TX`|`D2`|
 
-SoftwareSerial (18,19) // (RX,TX) BERHASIL
+SoftwareSerial (18,19) // (RX,TX) ARDUINO --> ESP BERHASIL
 | Pin ESP | Pin Mega |
 |:--------|:-------|
 |`RX`|`RX1(19)`|
