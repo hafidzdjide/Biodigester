@@ -1,6 +1,6 @@
 # Biodigester
 Program
- - [X] Sistem
+ - [x] Sistem
  - [ ] Kalibrasi Sensor
  - [ ] Test Kabel
  - [ ] Test Relay dan Output
