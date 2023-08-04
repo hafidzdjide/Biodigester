@@ -18,7 +18,7 @@ IoT
 - Update 1, Water Level, MotorDC
 - Update 2, Waktu, MotorDC
 - Update 3, Suhu + pH, Valve
-Opsional
+(Opsional)
 - Update 4, Tekanan Tangki Limbah, Strobe
 - Update 5, Tekanan Tangki Gas, Buzzer
 
