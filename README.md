@@ -52,7 +52,7 @@ Active High
 
 | Pin Relay | Output | Pin Mega| 
 |:--------|:------- |:-------|
-|`IN1`|` `|`37`|
+|`IN1`|`Buzzer`|`37`|
 |`IN2`|`Motor`|`35`|
 |`IN3`|`Valve`|`33`|
 |`IN4`|`Strobe`|`31`|
