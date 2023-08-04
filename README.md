@@ -45,6 +45,9 @@ SoftwareSerial (2, 3) // (RX,TX)
 |`D2`|`D2`|
 
 ### Relay
+Active Low
+- Strobe
+Active High
 
 | Pin Relay | Output | Pin Mega| 
 |:--------|:------- |:-------|
@@ -52,8 +55,6 @@ SoftwareSerial (2, 3) // (RX,TX)
 |`IN2`|`Motor`|`35`|
 |`IN3`|`Valve`|`33`|
 |`IN4`|`Strobe`|`31`|
-
-Strobe Aktif ketika nilai Low
 
 ### Sensor
 #### Analog
