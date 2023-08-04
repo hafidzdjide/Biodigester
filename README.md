@@ -1,4 +1,26 @@
 # Biodigester
+Program
+  [ ]Sistem
+  [ ]Kalibrasi Sensor
+  [ ]Test Kabel
+  [ ]Test Relay dan Relay
+IoT
+  [ ]Waktu
+  [ ]ThingSpeak
+  Telegram
+
+## Notifikasi Telegram
+- Warning 1,
+- Warning 2,
+- Warning 3,
+- Warning 4,
+- Warning 5,
+- Update 1, Water Level, MotorDC
+- Update 2, Waktu, MotorDC
+- Update 3, Suhu + pH, Valve
+Opsional
+- Update 4, Tekanan Tangki Limbah, Strobe
+- Update 5, Tekanan Tangki Gas, Buzzer
 
 ## Dokumentasi Pin
 
