@@ -4,6 +4,7 @@ Program
  - [ ] Kalibrasi Sensor
  - [ ] Test Kabel
  - [ ] Test Relay dan Output
+ - [ ] Test Sensor
 
 IoT
   - [ ] Waktu
