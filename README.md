@@ -1,12 +1,12 @@
 # Biodigester
 Program
- - [ ]Sistem
- - [ ]Kalibrasi Sensor
- - [ ]Test Kabel
- - [ ]Test Relay dan Relay
+ - [ ] Sistem
+ - [ ] Kalibrasi Sensor
+ - [ ] Test Kabel
+ - [ ] Test Relay dan Relay
 IoT
-  - [ ]Waktu
-  - [ ]ThingSpeak
+  - [ ] Waktu
+  - [ ] ThingSpeak
   - 
 
 ## Notifikasi Telegram
