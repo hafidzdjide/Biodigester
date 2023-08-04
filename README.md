@@ -1,9 +1,9 @@
 # Biodigester
 Program
- - [ ] Sistem
+ - [X] Sistem
  - [ ] Kalibrasi Sensor
  - [ ] Test Kabel
- - [ ] Test Relay dan Relay
+ - [ ] Test Relay dan Output
 
 IoT
   - [ ] Waktu
