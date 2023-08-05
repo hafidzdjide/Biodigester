@@ -53,9 +53,6 @@ SoftwareSerial (18,19) // (RX,TX) ARDUINO --> ESP BERHASIL
 
 ### Relay
 Active Low
-- Strobe
-
-Active High
 
 | Pin Relay | Output | Pin Mega| 
 |:--------|:------- |:-------|
