@@ -64,7 +64,6 @@ NTPClient timeClient(ntpUDP, "id.pool.ntp.org", utcOffsetInSeconds);
 //Deklarasi Hari dan Waktu
 char daysOfTheWeek[7][10] = {"Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu"};
 String TimeNow = "";
-String DateNow = "";
 String DayNow = "";
 
 //Deklarasi Milis dan Loop
@@ -122,10 +121,6 @@ void setup()
     lcd2.print ("CO2     : ");
     lcd2.setCursor (17, 1);
     lcd2.print ("PPM"); 
-//    lcd2.setCursor (0, 3); kosong, bekas sensor flow
-//    lcd2.print (" : ");
-//    lcd2.setCursor (15, 3);
-//    lcd2.print ("");
     
     Serial.println ("C2");
     pinMode (methaneMQ2, INPUT);        //MQ2 Sensor
@@ -147,7 +142,6 @@ void loop()
     timeClient.update();
     DayNow = daysOfTheWeek[timeClient.getDay()] ;
     TimeNow = timeClient.getFormattedTime();
-//    TimeNow = String()+timeClient.getHours()+":"+timeClient.getMinutes()+":"+timeClient.getSeconds();
     
     Serial.println ("C4");
     waterLevel();
@@ -163,43 +157,31 @@ void loop()
     Serial.println ("C5");
     lcd1.setCursor (12, 0);
     lcd1.print (kondisiTangki);
-    //Serial.println (liquidLevel);
-    //Serial.println (kondisiTangki);
 
     lcd1.setCursor (12, 1);
     lcd1.print (pressureValue1);
-    //Serial.println (pressureValue1);
 
     lcd1.setCursor (12, 2);
     lcd1.print (int (temperatureValue));
-    //Serial.println (temperatureValue);
 
     lcd1.setCursor (12, 3);
     lcd1.print (finalphValue);
-    //Serial.println (finalphValue);
     
-//    lcd2.setCursor (10, 0);
-//    lcd2.print ("       ");
     lcd2.setCursor (10, 0);
     lcd2.print (methanePPM);    
-    //Serial.println (methanePPM);
     
     lcd2.setCursor (10, 2);
     lcd2.print (pressureValue2);
-    //Serial.print ((pressureValue2);
 
-//    lcd2.setCursor (9, 1);
-//    lcd2.print ("       ");
+
     lcd2.setCursor (10, 1);
     lcd2.print (carbonPPM);
-    //Serial.println (carbonPPM);
 
     lcd2.setCursor (2,3);
     lcd2.print(DayNow);
     lcd2.setCursor (10,3);
     lcd2.print(TimeNow);
-//    lcd2.setCursor (12,3);
-//    lcd2.print(TimeNow);
+
     
     Serial.println ("K1");
     if (kondisiTangki = "Penuh"){
@@ -243,7 +225,6 @@ void loop()
       millisKirim = millis() + periodeKirim;
       String konten;
       konten = String()+"field1="+pressureValue1+"&field2="+finalphValue+"&field3="+temperatureValue+"&field4="+pressureValue2+"&field5="+methanePPM+"&field6="+carbonPPM+"&field7="+liquidLevel;
-//      Serial.println(konten);
       httpPOST(server, APIKey, konten, 120, 80);  }  // Kondisi permintaan data telegram (kalo jadi).
     
     Serial.println ("C7");
