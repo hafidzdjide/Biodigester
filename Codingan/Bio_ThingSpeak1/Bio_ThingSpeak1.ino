@@ -67,7 +67,7 @@ String TimeNow = "";
 String DateNow = "";
 String DayNow = "";
 
-//Deklaraasi Milis dan Loop
+//Deklarasi Milis dan Loop
 long currentTime;
 unsigned long previousLoop = 0;
 
