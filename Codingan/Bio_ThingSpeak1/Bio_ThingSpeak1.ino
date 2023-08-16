@@ -185,14 +185,14 @@ void loop()
     
     Serial.println ("K1");
     if (kondisiTangki = "Penuh"){
-      digitalWrite (motorRelay, LOW);
-    }else{
       digitalWrite (motorRelay, HIGH);
+    }else{
+      digitalWrite (motorRelay, LOW);
     }
 
     Serial.println ("K2"); // Kondisi setiap jam 4.30 menyalakan motorDC
     if (timeClient.getHours() == onHour && timeClient.getMinutes() == onMin){
-      digitalWrite (motorRelay, HIGH);
+      digitalWrite (motorRelay, LOW);
     }else if (timeClient.getHours() == offHour && timeClient.getMinutes() == offMin){
       digitalWrite (motorRelay, HIGH);
     }
@@ -206,18 +206,18 @@ void loop()
     
     Serial.println ("K4"); 
     if (pressureValue1 >= 0.4){
-      digitalWrite (strobeRelay, LOW);
+      digitalWrite (buzzerRelay, LOW);
     }else if (pressureValue1 <= 0.01){
       Pattern();
     }else{
-      digitalWrite (strobeRelay, HIGH);
+      digitalWrite (buzzerRelay, HIGH);
     }
 
     Serial.println ("K5");
-    if (pressureValue2 <= 0.4){
-        digitalWrite (buzzerRelay, LOW);
+    if (pressureValue2 >= 0.4){
+        digitalWrite (strobeRelay, LOW);
     }else{
-        digitalWrite (buzzerRelay, HIGH);
+        digitalWrite (strobeRelay, HIGH);
     }
     
     Serial.println ("C6");
@@ -271,14 +271,14 @@ void SenspH(){
 void Pattern(){
   const long interval = 5000;
   currentTime = millis();
-  int strobeState;
+  int buzzerState;
   if (currentTime - previousLoop >= interval) {
     previousLoop = currentTime;
     if (strobeState == LOW) {
-      strobeState = HIGH;
+      buzzerState = HIGH;
     }else {
-     strobeState = LOW;
+     buzzerState = LOW;
     }
-  digitalWrite(strobeRelay, strobeState);
+  digitalWrite(buzzerRelay, buzzerState);
   }
 }
