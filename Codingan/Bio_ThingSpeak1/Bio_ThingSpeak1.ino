@@ -274,7 +274,7 @@ void Pattern(){
   int buzzerState;
   if (currentTime - previousLoop >= interval) {
     previousLoop = currentTime;
-    if (strobeState == LOW) {
+    if (buzzerState == LOW) {
       buzzerState = HIGH;
     }else {
      buzzerState = LOW;
